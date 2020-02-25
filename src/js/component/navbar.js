@@ -3,17 +3,23 @@ import { Link } from "react-router-dom";
 import { Container, NavDropdown, Nav, Button, Form, FormControl } from "react-bootstrap";
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar navbar-light bg-light sticky-top">
 			<Link to="/">
-				<img
-					className="TPlogo"
-					src="https://files.slack.com/files-pri/T0BFXMWMV-FNJUVAP7D/tplogo.png"
-					alt="toppollLogo"
-				/>
-				<span className="navbar-brand mb-0 h1">
-					<strong>T</strong>
-					oppoll.net
-				</span>
+				<div className="d-flex justify-content-start align-items-center">
+					<div className="logo">
+						<img
+							className="TPlogo"
+							src="https://files.slack.com/files-pri/T0BFXMWMV-FNJUVAP7D/tplogo.png"
+							alt="toppollLogo"
+						/>
+					</div>
+					<span className="navbar-brand mb-0 h1">
+						<div className="word_logo">
+							<strong style={{ color: "#25408f" }}>T</strong>
+							<span>oppoll.net</span>
+						</div>
+					</span>
+				</div>
 			</Link>
 			<Link to="/">
 				<Button variant="light">Home</Button>{" "}
