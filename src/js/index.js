@@ -8,6 +8,8 @@ import "react-bootstrap";
 
 //include your index.scss file into the bundle
 import "../styles/index.scss";
+import "../styles/home.scss";
+import "../styles/demo.scss";
 
 //import your own components
 import Layout from "./layout";
