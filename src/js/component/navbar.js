@@ -16,7 +16,7 @@ export const Navbar = () => {
 						</div>
 						<span className="navbar-brand mb-0 h1">
 							<div className="word_logo">
-								<strong style={{ color: "#25408f" }}>T</strong>
+								<strong>T</strong>
 								<span>oppoll.net</span>
 							</div>
 						</span>

@@ -6,6 +6,8 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "react-bootstrap";
 import "animate.css";
+import "react-animate-on-scroll";
+import "react-scroll-parallax";
 
 //include your index.scss file into the bundle
 import "../styles/index.scss";
