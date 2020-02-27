@@ -25,7 +25,7 @@ export function Welcome() {
 
 export function Info2() {
 	return (
-		<div className="info2_sub" style={{ position: "absolute", bottom: "-160%", right: "-.01%" }}>
+		<div className="info2_sub" style={{ position: "absolute", bottom: "-160%", right: "30%" }}>
 			<hr />
 			<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "5s" }}>
 				<h1>Diverse Opinions</h1>
