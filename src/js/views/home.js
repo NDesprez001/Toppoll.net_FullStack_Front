@@ -14,16 +14,16 @@ export const Home = () => (
 			muted="muted"
 			loop="loop"
 			source
-			src="https://v.ftcdn.net/02/98/91/68/700_F_298916839_hsDs9lzZjpbWWV6sOeB7OT0GJ5dFMmVu_ST.mp4"
+			src="https://player.vimeo.com/external/210744044.sd.mp4?s=2c321f5fb693e9b7d0048e00930f9455a1d06bdf&profile_id=164&oauth2_token_id=57447761"
 			type="video/mp4"
 		/>
-		<div className="info_cluster d-flex justify-content-around align-items-center mb-5">
+		<div className="info_cluster d-flex justify-content-around align-items-center ">
 			<div className="info_cont1">
 				<hr />
 				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "5s" }}>
-					<h1>Be heard GLOBALLY!</h1>
+					<h1>Get Comfortable!</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "7s" }}>
-						<h4>See how opinions can vary from accross the GLOBE!</h4>
+						<h4>Talk to all sorts of people from all over, from anywhere!</h4>
 					</ScrollAnimation>
 				</ScrollAnimation>
 				<hr />
@@ -31,7 +31,7 @@ export const Home = () => (
 			<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s" }}>
 				<div className="info_cont2">
 					<img
-						src="https://lh3.googleusercontent.com/proxy/Lw9B4FkTm-vbqpVxgjfTYoyjrq9ei3Y7R7je85LkrkCDzD-bKnGD7zSxsXIG86-UnBlD41oO68v1Rc7s1gNiYLTsd4B1NtdRrOyUVL2D78ESojZ6Ei8"
+						src="https://lh3.googleusercontent.com/proxy/V4LTQDHNYgA_VoQI83JY5M6M4H4hAaCWS5z_f-OFuzb9gpljWNhvuKFa85lR_1ammwRTkMAGr5J1vgjOQrdkUPinsuw7htQsIC8eGTQ0aRyZRnUYZ64"
 						style={{ width: "500px" }}
 					/>
 				</div>
@@ -45,14 +45,12 @@ export const Home = () => (
 			muted="muted"
 			loop="loop"
 			source
-			src="https://v.ftcdn.net/02/14/15/69/240_F_214156930_Tgoj0fpjJYF7hw4XlXwWHjmDiDqo1mSL_ST.mp4"
-            type="video/mp4"
-            
+			src="https://player.vimeo.com/external/313697336.sd.mp4?s=cdff962a87a46830fe2662037b03ec2b2bcdd946&profile_id=164&oauth2_token_id=57447761"
+			type="video/mp4"
 		/>
 		<TakeSpace />
 		<TakeSpace />
 		<TakeSpace />
 		<TakeSpace />
-
 	</div>
 );
