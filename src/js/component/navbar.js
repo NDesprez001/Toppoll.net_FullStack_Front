@@ -30,7 +30,7 @@ export const Navbar = () => {
 				</Link>
 
 				<div className="ml-auto">
-					<Link to="/">
+					<Link to="/login">
 						<Button variant="light">Login</Button>{" "}
 					</Link>
 					<Link to="/">

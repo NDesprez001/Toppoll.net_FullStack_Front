@@ -23,16 +23,17 @@ export const Home = () => (
 			</div>
 			<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s" }}>
 				<div className="info_cont2">
-					<img
-						src="https://lh3.googleusercontent.com/proxy/V4LTQDHNYgA_VoQI83JY5M6M4H4hAaCWS5z_f-OFuzb9gpljWNhvuKFa85lR_1ammwRTkMAGr5J1vgjOQrdkUPinsuw7htQsIC8eGTQ0aRyZRnUYZ64"
-						style={{ width: "500px" }}
-					/>
+					<Button variant="light" style={{ "border-radius": "80px", width: "100px", height: "100px" }}>
+						Get started
+					</Button>{" "}
 				</div>
 			</ScrollAnimation>
 		</div>
 		<Info2 />
 		<div className="banner2">
-			<Button variant="light">Check it out!</Button>
+			<Button variant="light" style={{ "border-radius": "80px", width: "100px", height: "100px" }}>
+				Check it out!
+			</Button>
 		</div>
 		<TakeSpace />
 		<TakeSpace />
