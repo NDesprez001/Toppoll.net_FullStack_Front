@@ -13,6 +13,7 @@ import "react-scroll-parallax";
 import "../styles/index.scss";
 import "../styles/home.scss";
 import "../styles/demo.scss";
+import "../styles/login.scss";
 
 //import your own components
 import Layout from "./layout";
