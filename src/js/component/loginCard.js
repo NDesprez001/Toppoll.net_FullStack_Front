@@ -10,23 +10,27 @@ export function LoginCard() {
 					<Card>
 						<Card.Body>
 							<Card.Title>Login In!</Card.Title>
+							<p>Enter username here:</p>
 							<InputGroup className="mb-3">
 								<FormControl
-									placeholder="Username here"
+									placeholder="Username"
 									aria-label="Recipient's username"
 									aria-describedby="Username"
 								/>
 							</InputGroup>
+							<p>Enter password here:</p>
 							<InputGroup className="mb-3">
 								<FormControl
-									placeholder="Password here"
+									placeholder="Password"
 									aria-label="Recipient's password"
 									aria-describedby="Password"
 								/>
 							</InputGroup>
 						</Card.Body>
 						<Card.Footer>
-							<small className="redirect">Last updated 3 mins ago</small>
+							<small className="redirect1">{"Don't have an account?"}</small>
+							<small className="redirect2">{" Create one"}</small>
+							<a href="https://www.pexels.com/"> Here!</a>
 						</Card.Footer>
 					</Card>
 				</CardDeck>
