@@ -5,6 +5,21 @@ import { Container, NavDropdown, Nav, Button, Form, FormControl, CardDeck, Card,
 export function LoginCard() {
 	return (
 		<div className="loginLayout">
+			<div className="subLogo d-flex justify-content-center">
+				<img
+					className="TPlogo"
+					src="https://files.slack.com/files-pri/T0BFXMWMV-FNJUVAP7D/tplogo.png"
+					alt="toppollLogo"
+					style={{
+						width: "100px",
+						height: "100px",
+						"border-radius": "100px",
+						position: "absolute",
+						top: "26%",
+						"z-index": "1"
+					}}
+				/>
+			</div>
 			<div className="loginContents">
 				<CardDeck>
 					<Card>
