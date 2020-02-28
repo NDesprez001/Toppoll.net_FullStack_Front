@@ -38,6 +38,7 @@ export function RegisterCard() {
 									placeholder="First name"
 									aria-label="User's first name"
 									aria-describedby="first_name"
+									style={{ "border-radius": "50px" }}
 								/>
 							</InputGroup>
 							<p>Enter you last name:</p>
@@ -46,6 +47,7 @@ export function RegisterCard() {
 									placeholder="Last name"
 									aria-label="User's last name"
 									aria-describedby="last_name"
+									style={{ "border-radius": "50px" }}
 								/>
 							</InputGroup>
 							<p>Create your username:</p>
@@ -54,6 +56,7 @@ export function RegisterCard() {
 									placeholder="Username"
 									aria-label="User's username"
 									aria-describedby="username"
+									style={{ "border-radius": "50px" }}
 								/>
 							</InputGroup>
 							<p>Create your password:</p>
@@ -62,17 +65,22 @@ export function RegisterCard() {
 									placeholder="Password"
 									aria-label="User's password"
 									aria-describedby="uassword"
+									style={{ "border-radius": "50px" }}
 								/>
 							</InputGroup>
-							<Button variant="primary" style={{ margin: "auto" }}>
-								Create account!
-							</Button>
+							<div className="d-flex justify-content-center">
+								<Button variant="primary" style={{ margin: "auto", "border-radius": "50px" }}>
+									Create account!
+								</Button>
+							</div>
 						</Card.Body>
-						<Card.Footer>
-							<small className="redirect1">{"Already have an account?"}</small>
-							<small className="redirect2">{" Log in"}</small>
-							<a href="/login"> Here!</a>
-						</Card.Footer>
+						<div className="registerFooter" style={{ "text-align": "center" }}>
+							<Card.Footer>
+								<small className="redirect1">{"Already have an account?"}</small>
+								<small className="redirect2">{" Log in"}</small>
+								<a href="/login"> Here!</a>
+							</Card.Footer>
+						</div>
 					</Card>
 				</CardDeck>
 			</div>

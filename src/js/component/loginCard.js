@@ -20,6 +20,7 @@ export function LoginCard() {
 					}}
 				/>
 			</div>
+
 			<div className="loginContents">
 				<CardDeck>
 					<Card>
@@ -31,6 +32,7 @@ export function LoginCard() {
 									placeholder="Username"
 									aria-label="User's username"
 									aria-describedby="username"
+									style={{ "border-radius": "50px" }}
 								/>
 							</InputGroup>
 							<p>Enter your password:</p>
@@ -39,17 +41,20 @@ export function LoginCard() {
 									placeholder="Password"
 									aria-label="User's password"
 									aria-describedby="password"
+									style={{ "border-radius": "50px" }}
 								/>
 							</InputGroup>
 							<Button variant="primary" style={{ "border-radius": "50px" }}>
 								Log in!
 							</Button>
 						</Card.Body>
-						<Card.Footer>
-							<small className="redirect1">{"Don't have an account?"}</small>
-							<small className="redirect2">{" Create one"}</small>
-							<a href="/register"> Here!</a>
-						</Card.Footer>
+						<div className="loginFooter" style={{ "text-align": "center" }}>
+							<Card.Footer>
+								<small className="redirect1">{"Don't have an account?"}</small>
+								<small className="redirect2">{" Create one"}</small>
+								<a href="/register"> Here!</a>
+							</Card.Footer>
+						</div>
 					</Card>
 				</CardDeck>
 			</div>

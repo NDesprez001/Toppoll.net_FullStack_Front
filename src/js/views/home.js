@@ -1,5 +1,5 @@
 import React from "react";
-import { Welcome, Info2, Take_space, TakeSpace } from "../component/opener.js";
+import { Welcome, Take_space, TakeSpace } from "../component/opener.js";
 import { Container, NavDropdown, Nav, Button, Form, FormControl, Jumbotron } from "react-bootstrap";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
@@ -30,11 +30,21 @@ export const Home = () => (
 				</div>
 			</ScrollAnimation>
 		</div>
-		<Info2 />
-		<div className="banner2">
-			<Button variant="light" style={{ "border-radius": "80px", width: "100px", height: "100px" }}>
-				Check it out!
-			</Button>
+		<div className="banner2 d-flex justify-content-center align-items-center">
+			<div className="banner2Content">
+				<hr />
+				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
+					<h1>Diverse Opinions</h1>
+					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
+						<h4>With tons of people to converseate with, you can find many conversations,</h4>
+						<h4>debates, or even explainations. The discussion can be endless!</h4>
+					</ScrollAnimation>
+				</ScrollAnimation>
+				<hr />
+				<Button variant="light" style={{ "border-radius": "80px", width: "100px", height: "100px" }}>
+					Check it out!
+				</Button>
+			</div>
 		</div>
 		<TakeSpace />
 		<TakeSpace />
