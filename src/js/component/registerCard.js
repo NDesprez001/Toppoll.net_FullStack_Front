@@ -5,6 +5,21 @@ import { Container, NavDropdown, Nav, Button, Form, FormControl, CardDeck, Card,
 export function RegisterCard() {
 	return (
 		<div className="registerLayout" style={{ width: "500px" }}>
+			<div className="subLogo d-flex justify-content-center">
+				<img
+					className="TPlogo"
+					src="https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg"
+					alt="toppollLogo"
+					style={{
+						width: "100px",
+						height: "100px",
+						"border-radius": "100px",
+						position: "absolute",
+						top: "14%",
+						"z-index": "1"
+					}}
+				/>
+			</div>
 			<div className="registerContents">
 				<CardDeck>
 					<Card>
