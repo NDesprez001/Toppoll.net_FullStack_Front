@@ -4,6 +4,7 @@ import { LoginCard } from "../component/loginCard.js";
 import { Container, NavDropdown, Nav, Button, Form, FormControl, Jumbotron } from "react-bootstrap";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import { LoginCarousel } from "../component/loginCarousel.js";
 
 export const Login = () => (
 	<div
@@ -15,6 +16,7 @@ export const Login = () => (
 				"url('https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
 			"background-size": "cover"
 		}}>
+		<LoginCarousel />
 		<LoginCard />
 	</div>
 );
