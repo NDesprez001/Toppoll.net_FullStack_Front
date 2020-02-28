@@ -3,6 +3,7 @@ import { Welcome, Info2, Take_space, TakeSpace } from "../component/opener.js";
 import { Container, NavDropdown, Nav, Button, Form, FormControl, Jumbotron } from "react-bootstrap";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import { Footer } from "../component/footer.js";
 
 export const Home = () => (
 	<div className="text-center mt--20px">
@@ -39,5 +40,6 @@ export const Home = () => (
 		<TakeSpace />
 		<TakeSpace />
 		<TakeSpace />
+		<Footer />
 	</div>
 );

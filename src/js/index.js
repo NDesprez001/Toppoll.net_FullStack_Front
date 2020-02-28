@@ -14,6 +14,7 @@ import "../styles/index.scss";
 import "../styles/home.scss";
 import "../styles/demo.scss";
 import "../styles/login.scss";
+import "../styles/register.scss";
 
 //import your own components
 import Layout from "./layout";

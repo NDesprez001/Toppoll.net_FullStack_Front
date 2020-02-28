@@ -26,14 +26,14 @@ export const Navbar = () => {
 					<Button variant="light">Home</Button>{" "}
 				</Link>
 				<Link to="/">
-					<Button variant="light">Disqus</Button>{" "}
+					<Button variant="light">Toppolls</Button>{" "}
 				</Link>
 
 				<div className="ml-auto">
 					<Link to="/login">
 						<Button variant="light">Login</Button>{" "}
 					</Link>
-					<Link to="/">
+					<Link to="/register">
 						<Button variant="light">Sign Up</Button>{" "}
 					</Link>
 				</div>

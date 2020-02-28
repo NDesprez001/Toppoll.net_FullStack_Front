@@ -4,33 +4,36 @@ import { Container, NavDropdown, Nav, Button, Form, FormControl, CardDeck, Card,
 
 export function LoginCard() {
 	return (
-		<div className="loginLayout" style={{ width: "300px" }}>
+		<div className="loginLayout">
 			<div className="loginContents">
 				<CardDeck>
 					<Card>
-						<Card.Body>
+						<Card.Body style={{ width: "500px", "text-align": "center", "border-radius": "50px" }}>
 							<Card.Title>Login In!</Card.Title>
-							<p>Enter username here:</p>
+							<p>Enter you username:</p>
 							<InputGroup className="mb-3">
 								<FormControl
 									placeholder="Username"
-									aria-label="Recipient's username"
-									aria-describedby="Username"
+									aria-label="User's username"
+									aria-describedby="username"
 								/>
 							</InputGroup>
-							<p>Enter password here:</p>
+							<p>Enter your password:</p>
 							<InputGroup className="mb-3">
 								<FormControl
 									placeholder="Password"
-									aria-label="Recipient's password"
-									aria-describedby="Password"
+									aria-label="User's password"
+									aria-describedby="password"
 								/>
 							</InputGroup>
+							<Button variant="primary" style={{ "border-radius": "50px" }}>
+								Log in!
+							</Button>
 						</Card.Body>
 						<Card.Footer>
 							<small className="redirect1">{"Don't have an account?"}</small>
 							<small className="redirect2">{" Create one"}</small>
-							<a href="https://www.pexels.com/"> Here!</a>
+							<a href="/register"> Here!</a>
 						</Card.Footer>
 					</Card>
 				</CardDeck>
