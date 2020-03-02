@@ -16,7 +16,12 @@ import {
 export function RegisterCarousel() {
 	return (
 		<div className="carouselContent" style={{ width: "400px" }}>
-			<Carousel className="alterCarousel" controls={false} indicators={false} style={{ height: "633px" }}>
+			<Carousel
+				className="alterCarousel"
+				controls={false}
+				indicators={false}
+				interval="10000"
+				style={{ height: "633px" }}>
 				<Carousel.Item>
 					<img
 						className="d-block w-100"

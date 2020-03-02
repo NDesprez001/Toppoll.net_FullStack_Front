@@ -25,7 +25,7 @@ export const Navbar = () => {
 				<Link to="/">
 					<Button variant="light">Home</Button>{" "}
 				</Link>
-				<Link to="/">
+				<Link to="/toppolls">
 					<Button variant="light">Toppolls</Button>{" "}
 				</Link>
 

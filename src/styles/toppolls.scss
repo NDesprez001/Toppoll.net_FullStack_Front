@@ -1,0 +1,29 @@
+.toppollButton .topicButton{
+    background-color: #ddd;
+    border: none;
+    border-radius: 10px; 
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: 900;
+    margin: 4px 2px;
+    transition: 0.3s;
+}
+.toppollButton .topicButton:hover {
+    background-color: #25408f;
+    width: 200px;
+    color: white;
+    right: -20px;
+    transition: all 0.8s;
+}
+
+.tImage img {
+  transition: transform 1s, filter 1s ease-in-out;
+  filter: blur(1.5px);
+  transform: scale(1);
+}
+
+.tImage:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}

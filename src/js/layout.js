@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
+import { Toppolls } from "./views/toppolls";
 import { Login } from "./views/login";
 import { Register } from "./views/register";
 import { Demo } from "./views/demo";
@@ -25,6 +26,7 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Home} />
+						<Route path="/toppolls" component={Toppolls} />
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
 						<Route path="/demo" component={Demo} />

@@ -24,9 +24,9 @@ export const Home = () => (
 			</div>
 			<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s" }}>
 				<div className="info_cont2">
-					<Button variant="light" style={{ "border-radius": "80px", width: "100px", height: "100px" }}>
-						Get started
-					</Button>{" "}
+					<button className="b1" variant="light">
+						<p>Get started</p>
+					</button>
 				</div>
 			</ScrollAnimation>
 		</div>
@@ -41,9 +41,11 @@ export const Home = () => (
 					</ScrollAnimation>
 				</ScrollAnimation>
 				<hr />
-				<Button variant="light" style={{ "border-radius": "80px", width: "100px", height: "100px" }}>
-					Check it out!
-				</Button>
+				<div className="info_cont3">
+					<button className="b2" variant="light">
+						<p>Take a look</p>
+					</button>
+				</div>
 			</div>
 		</div>
 		<TakeSpace />
