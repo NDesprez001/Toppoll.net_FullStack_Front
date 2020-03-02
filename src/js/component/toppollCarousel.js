@@ -15,13 +15,16 @@ import {
 
 export function ToppollCarousel() {
 	return (
-		<div className="carouselContent d-flex justify-content-center" style={{ width: "800px", margin: "auto" }}>
+		<div
+			className="carouselContent d-flex justify-content-center"
+			style={{ width: "800px", height: "400px", margin: "auto" }}>
 			<Carousel>
 				<Carousel.Item>
 					<img
 						className="d-block w-100"
 						src="https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 						alt="First slide"
+						style={{ height: "400px" }}
 					/>
 					<Carousel.Caption>
 						<h3>First slide label</h3>
@@ -33,6 +36,7 @@ export function ToppollCarousel() {
 						className="d-block w-100"
 						src="https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 						alt="Third slide"
+						style={{ height: "400px" }}
 					/>
 
 					<Carousel.Caption>
@@ -45,6 +49,7 @@ export function ToppollCarousel() {
 						className="d-block w-100"
 						src="https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 						alt="Third slide"
+						style={{ height: "400px" }}
 					/>
 
 					<Carousel.Caption>
