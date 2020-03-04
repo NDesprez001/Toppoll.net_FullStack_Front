@@ -69,7 +69,7 @@ export function RegisterCard() {
 								/>
 							</InputGroup>
 							<div className="d-flex justify-content-center">
-								<Button variant="primary" style={{ margin: "auto", "border-radius": "50px" }}>
+								<Button variant="primary" style={{ margin: "auto", borderRadius: "50px" }}>
 									Create account!
 								</Button>
 							</div>

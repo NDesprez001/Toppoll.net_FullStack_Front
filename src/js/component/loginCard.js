@@ -13,7 +13,7 @@ export function LoginCard() {
 					style={{
 						width: "100px",
 						height: "100px",
-						"border-radius": "100px",
+						borderRadius: "100px",
 						position: "absolute",
 						top: "26%",
 						"z-index": "1"
@@ -24,7 +24,7 @@ export function LoginCard() {
 			<div className="loginContents">
 				<CardDeck>
 					<Card>
-						<Card.Body style={{ width: "500px", "text-align": "center", "border-radius": "50px" }}>
+						<Card.Body style={{ width: "500px", "text-align": "center", borderRadius: "50px" }}>
 							<Card.Title>Login In!</Card.Title>
 							<p>Enter you username:</p>
 							<InputGroup className="mb-3">
@@ -32,7 +32,7 @@ export function LoginCard() {
 									placeholder="Username"
 									aria-label="User's username"
 									aria-describedby="username"
-									style={{ "border-radius": "50px" }}
+									style={{ borderRadius: "50px" }}
 								/>
 							</InputGroup>
 							<p>Enter your password:</p>
@@ -41,10 +41,10 @@ export function LoginCard() {
 									placeholder="Password"
 									aria-label="User's password"
 									aria-describedby="password"
-									style={{ "border-radius": "50px" }}
+									style={{ borderRadius: "50px" }}
 								/>
 							</InputGroup>
-							<Button variant="primary" style={{ "border-radius": "50px" }}>
+							<Button variant="primary" style={{ borderRadius: "50px" }}>
 								Log in!
 							</Button>
 						</Card.Body>

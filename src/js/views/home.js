@@ -48,10 +48,24 @@ export const Home = () => (
 				</div>
 			</div>
 		</div>
-		<TakeSpace />
-		<TakeSpace />
-		<TakeSpace />
-		<TakeSpace />
+		<div className="socialMedia">
+			<img
+				className="ig"
+				src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-128.png"
+			/>
+			<img
+				className="fb"
+				src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-512.png"
+			/>
+			<img
+				className="tw"
+				src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-512.png"
+			/>
+			<img
+				className="gm"
+				src="https://cdn2.iconfinder.com/data/icons/social-icons-circular-color/512/gmail-512.png"
+			/>
+		</div>
 		<Footer />
 	</div>
 );

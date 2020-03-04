@@ -20,7 +20,7 @@ export function LoginCarousel() {
 				className="alterCarousel"
 				controls={false}
 				indicators={false}
-				interval="10000"
+				interval="8000"
 				style={{ height: "351px" }}>
 				<Carousel.Item>
 					<img

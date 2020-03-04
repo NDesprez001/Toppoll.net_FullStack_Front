@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, NavDropdown, Nav, Button, Form, FormControl } from "react-bootstrap";
+import { Container, NavDropdown, Nav, Button, Form, FormControl, Dropdown, DropdownButton } from "react-bootstrap";
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light sticky-top mb-0">
@@ -36,6 +36,17 @@ export const Navbar = () => {
 					<Link to="/register">
 						<Button variant="light">Sign Up</Button>{" "}
 					</Link>
+					<div className="socialMedia" style={{ display: "inline-block" }}>
+						<DropdownButton id="dropdown-basic-button" variant="primary" title="Contacts">
+							<Dropdown.Item href="https://www.instagram.com/">Instagram</Dropdown.Item>
+							<Dropdown.Item href="https://www.facebook.com/">Facebook</Dropdown.Item>
+							<Dropdown.Item href="https://twitter.com/?lang=en">Twitter</Dropdown.Item>
+							<hr className="mt-0 mb-0" />
+							<Dropdown.Item href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">
+								NoshDesprez@gmail.com
+							</Dropdown.Item>
+						</DropdownButton>
+					</div>
 				</div>
 			</div>
 		</nav>

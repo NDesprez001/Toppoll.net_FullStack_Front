@@ -13,8 +13,8 @@ export const Login = () => (
 			width: "100%",
 			height: "100%",
 			"background-image":
-				"url('https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
-			"background-size": "cover"
+				"url('https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
+			backgroundSize: "cover"
 		}}>
 		<LoginCarousel />
 		<LoginCard />
