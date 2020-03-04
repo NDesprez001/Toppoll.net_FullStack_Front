@@ -26,13 +26,12 @@ export const Toppolls = () => {
 		<div
 			style={{
 				width: "100%",
-				height: "100%",
-				backgroundImage:
-					"url('https://www.xmple.com/wallpaper/gradient-white-blue-linear-1920x1080-c2-ffffff-87cefa-a-150-f-14.svg')",
-				backgroundSize: "cover"
+				height: "100%"
 			}}>
 			<ToppollCarousel />
-			<div className="topics card-group d-flex justify-content-around" style={{ margin: "auto" }}>
+			<div
+				className="topics card-group d-flex justify-content-around"
+				style={{ width: "1222px", margin: "auto" }}>
 				{polls.map((item, index) => {
 					return <ToppollCard key={index} data={item} index={index} />;
 				})}

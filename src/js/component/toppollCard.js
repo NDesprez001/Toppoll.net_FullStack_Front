@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 
 export function ToppollCard(props) {
 	return (
-		<div className="toppollLayout text-center">
-			<Card style={{ width: "18rem", borderRadius: "10px" }}>
+		<div className="toppollLayout text-center" style={{ width: "400px" }}>
+			<Card style={{ width: "18rem", borderRadius: "10px", height: "488px" }}>
 				<div className="tImage">
 					<img
 						src="https://images.pexels.com/photos/1126373/pexels-photo-1126373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
