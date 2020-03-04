@@ -32,13 +32,9 @@ export const Toppolls = () => {
 				backgroundSize: "cover"
 			}}>
 			<ToppollCarousel />
-			<div className="topics d-flex justify-content-around mt-5" style={{ margin: "auto" }}>
+			<div className="topics card-group d-flex justify-content-around" style={{ margin: "auto" }}>
 				{polls.map((item, index) => {
-					return (
-						<div key={index}>
-							<ToppollCard data={item} index={index} />
-						</div>
-					);
+					return <ToppollCard key={index} data={item} index={index} />;
 				})}
 				{/* <ToppollCard data={{ name: "idk" }} /> */}
 				{/* <ToppollCard />

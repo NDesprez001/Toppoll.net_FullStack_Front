@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 export function ToppollCard(props) {
 	return (
-		<div className="toppollLayout">
+		<div className="toppollLayout text-center">
 			<Card style={{ width: "18rem", borderRadius: "10px" }}>
 				<div className="tImage">
 					<img
@@ -15,12 +15,8 @@ export function ToppollCard(props) {
 					/>
 				</div>
 				<Card.Body>
-					<Card.Title />
-					<Card.Text>
-						{
-							"Some quick example text to build on the card title and make up the bulk of the card's content."
-						}
-					</Card.Text>
+					<Card.Title>{props.data.poll_question}</Card.Title>
+					<Card.Text>{props.data.poll_description}</Card.Text>
 					<Link to={"/pollPage/" + props.index}>
 						<div className="toppollButton">
 							<button className="topicButton" variant="primary">

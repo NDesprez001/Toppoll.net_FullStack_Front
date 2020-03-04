@@ -6,13 +6,14 @@ import { ToppollCard } from "../component/toppollCard.js";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 
-export const PollTopic = () => {
+export const PollTopic = props => {
 	const { store } = useContext(Context);
 	const [poll, setPoll] = useState(store.polls[props.match.params.index]);
 
+	console.log("pollPage", poll);
 	return (
 		<div>
-			<h1>Hello World</h1>
+			<h1>{poll.poll_question}</h1>
 		</div>
 	);
 };
