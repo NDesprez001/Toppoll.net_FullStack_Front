@@ -5,21 +5,23 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { ToppollCard } from "../component/toppollCard.js";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
-export const PollTopic = props => {
+export function PollTopic(props) {
 	const { store } = useContext(Context);
 	const [poll, setPoll] = useState(store.polls[props.match.params.index]);
 
-	console.log("pollPage", poll);
 	return (
 		<div>
-			<div className="container d-flex justify-content-center mt-5 pt-5">
+			<div className="container">
 				<h1>{poll.poll_question}</h1>
 			</div>
 		</div>
 	);
-};
+}
 
 PollTopic.propTypes = {
+	data: PropTypes.object,
+	index: PropTypes.number,
 	match: PropTypes.object
 };

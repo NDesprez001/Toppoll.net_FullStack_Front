@@ -31,8 +31,6 @@ export const Layout = () => {
 						<Route path="/toppolls" component={Toppolls} />
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
-						<Route path="/demo" component={Demo} />
-						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 				</ScrollToTop>

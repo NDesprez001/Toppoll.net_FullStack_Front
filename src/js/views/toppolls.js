@@ -8,19 +8,6 @@ import { Context } from "../store/appContext";
 
 export const Toppolls = () => {
 	const { store } = useContext(Context);
-	const [polls, setPolls] = useState(store.polls);
-
-	useEffect(() => {
-		console.log(polls);
-		// fetch("https://3000-d74dd462-eefd-4f5e-ac59-8dbd53a34abb.ws-us02.gitpod.io/polls", {
-		// 	method: "GET",
-		// 	cache: "no-cache"
-		// })
-		// 	.then(resp => resp.json())
-		// 	.then(data => {
-		// 		console.log(data);
-		// 	});
-	}, []);
 
 	return (
 		<div
@@ -33,7 +20,7 @@ export const Toppolls = () => {
 			<div
 				className="topics card-group d-flex justify-content-around"
 				style={{ width: "1222px", margin: "auto" }}>
-				{polls.map((item, index) => {
+				{store.polls.map((item, index) => {
 					return <ToppollCard key={index} data={item} index={index} />;
 				})}
 				{/* <ToppollCard data={{ name: "idk" }} /> */}
