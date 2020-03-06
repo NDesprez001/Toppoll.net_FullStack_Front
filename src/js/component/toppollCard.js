@@ -7,11 +7,11 @@ import PropTypes from "prop-types";
 export function ToppollCard(props) {
 	return (
 		<div className="toppollLayout text-center mt-5" style={{ width: "400px" }}>
-			<Card style={{ width: "18rem", borderRadius: "10px", height: "488px" }}>
+			<Card style={{ width: "400px", borderRadius: "10px", height: "550px" }}>
 				<div className="tImage">
 					<img
-						src="https://images.pexels.com/photos/1126373/pexels-photo-1126373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-						style={{ width: "286px", borderRadius: "10px" }}
+						src={props.data.image_link}
+						style={{ width: "400px", height: "300px", borderRadius: "10px" }}
 					/>
 				</div>
 				<Card.Body>
