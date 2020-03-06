@@ -24,6 +24,7 @@ export const Toppolls = () => {
 
 	return (
 		<div
+			className="container"
 			style={{
 				width: "100%",
 				height: "100%"

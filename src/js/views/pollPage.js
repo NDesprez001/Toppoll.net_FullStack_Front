@@ -13,7 +13,9 @@ export const PollTopic = props => {
 	console.log("pollPage", poll);
 	return (
 		<div>
-			<h1>{poll.poll_question}</h1>
+			<div className="container d-flex justify-content-center mt-5 pt-5">
+				<h1>{poll.poll_question}</h1>
+			</div>
 		</div>
 	);
 };
