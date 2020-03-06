@@ -36,6 +36,11 @@ export function PollTopic(props) {
 							{poll.option4}
 						</Button>
 					</div>
+					<div className="navBack">
+						<button className="b1" variant="light">
+							<p>Return to Toppolls</p>
+						</button>
+					</div>
 				</div>
 			)}
 		</div>
