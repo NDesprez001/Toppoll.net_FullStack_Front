@@ -17,18 +17,18 @@ export function ToppollCarousel() {
 	return (
 		<div
 			className="carouselContent d-flex justify-content-center"
-			style={{ width: "800px", height: "400px", margin: "auto" }}>
+			style={{ width: "900px", height: "600px", margin: "auto" }}>
 			<Carousel>
 				<Carousel.Item>
 					<img
 						className="d-block w-100"
-						src="https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+						src="https://images.pexels.com/photos/2923156/pexels-photo-2923156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 						alt="First slide"
-						style={{ height: "400px" }}
+						style={{ height: "600px" }}
 					/>
 					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						<h3>Be a winner</h3>
+						<p>{'be announced as "Most active Toppoller on our upcoming leaderboard"!'}</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
@@ -36,7 +36,7 @@ export function ToppollCarousel() {
 						className="d-block w-100"
 						src="https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 						alt="Third slide"
-						style={{ height: "400px" }}
+						style={{ height: "600px" }}
 					/>
 
 					<Carousel.Caption>
@@ -49,7 +49,7 @@ export function ToppollCarousel() {
 						className="d-block w-100"
 						src="https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 						alt="Third slide"
-						style={{ height: "400px" }}
+						style={{ height: "600px" }}
 					/>
 
 					<Carousel.Caption>

@@ -15,32 +15,42 @@ export function PollTopic(props) {
 		<div>
 			{poll && (
 				<div className="container text-center mt-5 pt-5">
-					<h1>{poll.poll_question}</h1>
-					<img src={poll.image_link} />
-					<h5>{poll.poll_description}</h5>
+					<div className="containContent">
+						<hr />
+						<h1>{poll.poll_question}</h1>
+						<hr />
+						<img src={poll.image_link} />
+						<h5>{poll.poll_description}</h5>
+					</div>
 
 					<div className="pollOptions align-items-center" style={{ margin: "auto" }}>
-						<Button variant="outline-primary" style={{ width: "400px" }}>
+						<Button className="option" variant="outline-primary" style={{ width: "400px" }}>
 							{poll.option1}
 						</Button>
 						<br />
-						<Button variant="outline-primary" style={{ width: "400px" }}>
+						<Button className="option" variant="outline-primary" style={{ width: "400px" }}>
 							{poll.option2}
 						</Button>
 						<br />
-						<Button variant="outline-primary" style={{ width: "400px" }}>
+						<Button className="option" variant="outline-primary" style={{ width: "400px" }}>
 							{poll.option3}
 						</Button>
 						<br />
-						<Button variant="outline-primary" style={{ width: "400px" }}>
+						<Button className="option" variant="outline-primary" style={{ width: "400px" }}>
 							{poll.option4}
 						</Button>
 					</div>
-					<div className="navBack">
-						<button className="b1" variant="light">
-							<p>Return to Toppolls</p>
-						</button>
-					</div>
+					<Link to="/toppolls">
+						<div className="navBack" style={{ borederRadius: "10px" }}>
+							<button className="b1">
+								<p>Return to Toppolls</p>
+							</button>
+						</div>
+					</Link>
+					<TakeSpace />
+					<TakeSpace />
+					<TakeSpace />
+					<TakeSpace />
 				</div>
 			)}
 		</div>

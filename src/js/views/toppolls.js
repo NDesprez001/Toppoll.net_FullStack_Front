@@ -17,7 +17,7 @@ export const Toppolls = () => {
 				height: "100%"
 			}}>
 			<ToppollCarousel />
-			<div className="topics card-group d-flex align-items-center" style={{ width: "1222px", margin: "auto" }}>
+			<div className="topics card-group d-flex align-items-around" style={{ width: "1222px", margin: "auto" }}>
 				{store.polls.map((item, index) => {
 					return <ToppollCard key={index} data={item} index={index} />;
 				})}

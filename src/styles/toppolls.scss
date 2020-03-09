@@ -27,3 +27,62 @@
   filter: blur(0);
   transform: scale(1);
 }
+
+.card{
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.navBack .b1 {
+    background-color: #ddd;
+    border: none;
+    border-radius: 20px; 
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: 900;
+    margin: 4px 2px;
+    transition: 0.3s;
+}
+
+.navBack .b1:hover {
+    background-color: #25408f;
+    width: 400px;
+    color: white;
+    right: -20px;
+    transition: all 0.8s;
+    font-size: 20px;
+}
+
+.option{
+  transition: transform .2s;
+}
+
+.option:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.containContent img {
+    border-radius: 10px;
+    width: 750px;
+}
+
+.containContent h1 {
+    font-weight: 100px;
+    color: black;
+    font-family: Courier;
+    font-size: 80px;
+    text-shadow: 0px 10px 20px black;
+}
+
+.containContent h5 {
+    font-weight: bold;
+    color: black;
+    font-family: Courier;
+    font-size: 20px;
+}
