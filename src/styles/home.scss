@@ -159,3 +159,17 @@ body {
   opacity: 1;
   right: 0;
 }
+
+.socialMedia img {
+    width: 300px;
+}
+
+.socialMedia {
+    background-image: url('https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1200px;
+}
+hr {  
+    border-top: 5px dotted #25408f; 
+} 

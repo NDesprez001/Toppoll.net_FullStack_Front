@@ -2,6 +2,7 @@ import React from "react";
 import { Welcome, Take_space, TakeSpace } from "../component/opener.js";
 import { Container, NavDropdown, Nav, Button, Form, FormControl, Jumbotron } from "react-bootstrap";
 import ScrollAnimation from "react-animate-on-scroll";
+import ScrollUpButton from "react-scroll-up-button";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import { Footer } from "../component/footer.js";
 
@@ -49,22 +50,59 @@ export const Home = () => (
 			</div>
 		</div>
 		<div className="socialMedia">
-			<img
-				className="ig"
-				src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-128.png"
-			/>
-			<img
-				className="fb"
-				src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-512.png"
-			/>
-			<img
-				className="tw"
-				src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-512.png"
-			/>
-			<img
-				className="gm"
-				src="https://cdn2.iconfinder.com/data/icons/social-icons-circular-color/512/gmail-512.png"
-			/>
+			<ScrollAnimation
+				animateIn="rollIn"
+				style={{ animationDuration: "3s", width: "400px", position: "relative", left: "20%" }}>
+				<div className="instagramPic">
+					<img
+						className="ig"
+						src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png"
+					/>
+				</div>
+			</ScrollAnimation>
+			<ScrollAnimation
+				animateIn="rollIn"
+				style={{ animationDuration: "3s", width: "400px", position: "relative", left: "10%" }}>
+				<div className="facbookPic">
+					<img
+						className="fb"
+						src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-512.png"
+					/>
+				</div>
+			</ScrollAnimation>
+			<div className="socialBanner" style={{ width: "600px", position: "relative", bottom: "20%", left: "60%" }}>
+				<hr />
+				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
+					<h1>Spread the word!!</h1>
+					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
+						<h4>
+							share great debates, questions and all sorts of things with you friends, family and further!{" "}
+						</h4>
+					</ScrollAnimation>
+				</ScrollAnimation>
+				<hr />
+			</div>
+			<ScrollAnimation
+				animateIn="rollIn"
+				style={{ animationDuration: "3s", width: "400px", position: "relative", left: "38%", bottom: "30%" }}>
+				<div className="twitterPic">
+					<img
+						className="tw"
+						src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-512.png"
+					/>
+				</div>
+			</ScrollAnimation>
+			<ScrollAnimation
+				animateIn="rollIn"
+				style={{ animationDuration: "3s", width: "400px", position: "relative", bottom: "30%", left: "20%" }}>
+				<div className="gmailPic">
+					<img
+						className="gm"
+						src="https://cdn2.iconfinder.com/data/icons/social-icons-circular-color/512/gmail-512.png"
+					/>
+				</div>
+			</ScrollAnimation>
+			<ScrollUpButton />
 		</div>
 		<Footer />
 	</div>

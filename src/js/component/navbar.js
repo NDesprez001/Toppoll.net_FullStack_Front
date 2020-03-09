@@ -36,7 +36,7 @@ export const Navbar = () => {
 					<Link to="/register">
 						<Button variant="light">Sign Up</Button>{" "}
 					</Link>
-					<div className="socialMedia" style={{ display: "inline-block" }}>
+					<div className="socialMediaRef" style={{ display: "inline-block" }}>
 						<DropdownButton id="dropdown-basic-button" variant="primary" title="Contacts">
 							<Dropdown.Item href="https://www.instagram.com/">Instagram</Dropdown.Item>
 							<Dropdown.Item href="https://www.facebook.com/">Facebook</Dropdown.Item>
