@@ -5,6 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import ScrollUpButton from "react-scroll-up-button";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import { Footer } from "../component/footer.js";
+import { Link } from "react-router-dom";
 
 export const Home = () => (
 	<div className="text-center mt--20px">
@@ -17,16 +18,18 @@ export const Home = () => (
 					<h1>The Sky Is The Limit!</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
 						<h4>There are little to no limits to what the topics can be,</h4>
-						<h4>so whether from animals to politics, go as far as your mide takes you!</h4>
+						<h4>so whether from animals to politics, go as far as your mind takes you!</h4>
 					</ScrollAnimation>
 				</ScrollAnimation>
 			</div>
 			<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s", animationDelay: "3s" }}>
-				<div className="info_cont2">
-					<button className="b1" variant="light">
-						<p>Get started</p>
-					</button>
-				</div>
+				<Link to="/register">
+					<div className="info_cont2">
+						<button className="b1" variant="light">
+							<p>Get started</p>
+						</button>
+					</div>
+				</Link>
 			</ScrollAnimation>
 		</div>
 		<div className="banner2 d-flex justify-content-center align-items-center">
@@ -39,11 +42,13 @@ export const Home = () => (
 					</ScrollAnimation>
 				</ScrollAnimation>
 				<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s", animationDelay: "3s" }}>
-					<div className="info_cont3 mt-5">
-						<button className="b2" variant="light">
-							<p>Take a look</p>
-						</button>
-					</div>
+					<Link to="/toppolls">
+						<div className="info_cont3 mt-5">
+							<button className="b2" variant="light">
+								<p>Take a look</p>
+							</button>
+						</div>
+					</Link>
 				</ScrollAnimation>
 			</div>
 		</div>

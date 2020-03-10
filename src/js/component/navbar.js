@@ -37,13 +37,13 @@ export const Navbar = () => {
 						<Button variant="light">Sign Up</Button>{" "}
 					</Link>
 					<div className="socialMediaRef" style={{ display: "inline-block" }}>
-						<DropdownButton id="dropdown-basic-button" variant="primary" title="Contacts">
-							<Dropdown.Item href="https://www.instagram.com/">Instagram</Dropdown.Item>
+						<DropdownButton id="dropdown-basic-button" variant="primary" title="Connect or contact">
+							<Dropdown.Item href="https://www.instagram.com/toppoll_official/">Instagram</Dropdown.Item>
 							<Dropdown.Item href="https://www.facebook.com/">Facebook</Dropdown.Item>
-							<Dropdown.Item href="https://twitter.com/?lang=en">Twitter</Dropdown.Item>
+							<Dropdown.Item href="https://twitter.com/Toppoll1">Twitter</Dropdown.Item>
 							<hr className="mt-0 mb-0" />
 							<Dropdown.Item href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">
-								NoshDesprez@gmail.com
+								Toppoll@gmail.com
 							</Dropdown.Item>
 						</DropdownButton>
 					</div>
