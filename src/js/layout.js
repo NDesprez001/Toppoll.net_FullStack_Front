@@ -27,6 +27,7 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Home} />
+						<Route path="/demo" component={Demo} />
 						<Route path="/pollPage/:index" component={PollTopic} />
 						<Route path="/toppolls" component={Toppolls} />
 						<Route path="/login" component={Login} />

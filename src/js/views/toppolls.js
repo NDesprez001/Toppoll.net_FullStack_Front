@@ -11,13 +11,18 @@ export const Toppolls = () => {
 
 	return (
 		<div
-			className="container"
+			className="toppollBody"
 			style={{
 				width: "100%",
 				height: "100%"
 			}}>
 			<ToppollCarousel />
-			<div className="topics card-group d-flex align-items-around" style={{ width: "1222px", margin: "auto" }}>
+			<div className="headingPick text-center mt-5 mb-5">
+				<h1>Pick a poll, any poll!</h1>
+			</div>
+			<div
+				className="topics card-group d-flex justify-content-between align-items-center"
+				style={{ width: "1222px", margin: "auto" }}>
 				{store.polls.map((item, index) => {
 					return <ToppollCard key={index} data={item} index={index} />;
 				})}

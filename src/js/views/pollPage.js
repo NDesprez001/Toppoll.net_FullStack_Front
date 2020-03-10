@@ -12,7 +12,7 @@ export function PollTopic(props) {
 	const [poll, setPoll] = useState(store.polls[props.match.params.index]);
 
 	return (
-		<div>
+		<div className="pollBody">
 			{poll && (
 				<div className="container text-center mt-5 pt-5">
 					<div className="containContent">
