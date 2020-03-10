@@ -13,7 +13,6 @@ export const Home = () => (
 		</div>
 		<div className="info_cluster d-flex justify-content-around align-items-center ">
 			<div className="info_cont1">
-				<hr />
 				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
 					<h1>The Sky Is The Limit!</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
@@ -21,9 +20,8 @@ export const Home = () => (
 						<h4>so whether from animals to politics, go as far as your mide takes you!</h4>
 					</ScrollAnimation>
 				</ScrollAnimation>
-				<hr />
 			</div>
-			<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s" }}>
+			<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s", animationDelay: "3s" }}>
 				<div className="info_cont2">
 					<button className="b1" variant="light">
 						<p>Get started</p>
@@ -33,7 +31,6 @@ export const Home = () => (
 		</div>
 		<div className="banner2 d-flex justify-content-center align-items-center">
 			<div className="banner2Content">
-				<hr />
 				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
 					<h1>Diverse Opinions</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
@@ -41,12 +38,13 @@ export const Home = () => (
 						<h4>debates, or even explainations. The discussion can be endless!</h4>
 					</ScrollAnimation>
 				</ScrollAnimation>
-				<hr />
-				<div className="info_cont3">
-					<button className="b2" variant="light">
-						<p>Take a look</p>
-					</button>
-				</div>
+				<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s", animationDelay: "3s" }}>
+					<div className="info_cont3 mt-5">
+						<button className="b2" variant="light">
+							<p>Take a look</p>
+						</button>
+					</div>
+				</ScrollAnimation>
 			</div>
 		</div>
 		<div className="socialMedia">
@@ -71,7 +69,6 @@ export const Home = () => (
 				</div>
 			</ScrollAnimation>
 			<div className="socialBanner" style={{ width: "600px", position: "relative", bottom: "20%", left: "60%" }}>
-				<hr />
 				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
 					<h1>Spread the word!!</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
@@ -80,7 +77,6 @@ export const Home = () => (
 						</h4>
 					</ScrollAnimation>
 				</ScrollAnimation>
-				<hr />
 			</div>
 			<ScrollAnimation
 				animateIn="rollIn"

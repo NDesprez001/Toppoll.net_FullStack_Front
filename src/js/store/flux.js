@@ -2,9 +2,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		actions: {
 			fetchSaveToStore: () => {
-				fetch("http://toppolls.herokuapp.com", {
+				fetch("https://toppolls.herokuapp.com/polls", {
 					method: "GET",
-					method: "POST",
+					// method: "POST",
 					cache: "no-cache"
 				})
 					.then(resp => resp.json())
@@ -35,7 +35,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					},
 					poll_description:
 						"A luxury cruise, flying first class, a glamourous bullet train, a scenic drive through the country; which getaway sounds best to you?",
-					poll_question: "What's the best way to travel?",
+					poll_question: "This is a test",
 					voting_users: [
 						{
 							id: 1,
