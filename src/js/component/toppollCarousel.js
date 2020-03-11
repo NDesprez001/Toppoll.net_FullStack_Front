@@ -28,7 +28,11 @@ export function ToppollCarousel() {
 					/>
 					<Carousel.Caption>
 						<h3>Be a winner</h3>
-						<p>{'be announced as "Most active Toppoller on our upcoming leaderboard"!'}</p>
+						<p>
+							{
+								'be announced as "The Toppoller of the Month" on our upcoming leaderboard for having the most popular comment!'
+							}
+						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>

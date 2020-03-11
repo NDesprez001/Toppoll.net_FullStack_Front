@@ -1,8 +1,11 @@
+// const url = 'https://toppolls.herokuapp.com'
+const url = "https://3000-d74dd462-eefd-4f5e-ac59-8dbd53a34abb.ws-us02.gitpod.io";
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		actions: {
-			fetchSaveToStore: () => {
-				fetch("https://toppolls.herokuapp.com/polls", {
+			fetchPolls: () => {
+				fetch(url + "/polls", {
 					method: "GET",
 					// method: "POST",
 					cache: "no-cache"
@@ -12,8 +15,33 @@ const getState = ({ getStore, getActions, setStore }) => {
 						setStore({ polls: data });
 						console.log("polls", data);
 					});
+			},
+
+			fetchLogin: () => {
+				fetch(url + "/users/token", {
+					method: "GET",
+					cache: "no-cache"
+				})
+					.then(resp => resp.json())
+					.then(data => {
+						setStore({ userToken: data });
+						console.log("userToken", data);
+					});
+			},
+
+			register: infoUser => {
+				fetch(url + "/users", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify(infoUser)
+				})
+					.then(resp => resp.json())
+					.then(response => console.log("register", response));
 			}
 		},
+
 		store: {
 			polls: [
 				{

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import { Container, NavDropdown, Nav, Button, Form, FormControl, CardDeck, Card, InputGroup } from "react-bootstrap";
 
 export function LoginCard() {
+	const [username, setUsername] = useState("");
+	const { store, actions } = useContext(Context);
 	return (
 		<div className="loginLayout">
+			{username}
 			<div className="subLogo d-flex justify-content-center">
 				<img
 					className="TPlogo"
@@ -29,6 +33,7 @@ export function LoginCard() {
 							<p>Enter you username:</p>
 							<InputGroup className="mb-3">
 								<FormControl
+									onChange={e => setUsername(e.target.value)}
 									placeholder="Username"
 									aria-label="User's username"
 									aria-describedby="username"
@@ -44,7 +49,12 @@ export function LoginCard() {
 									style={{ borderRadius: "50px" }}
 								/>
 							</InputGroup>
-							<Button variant="primary" style={{ borderRadius: "50px" }}>
+							<Button
+								variant="primary"
+								style={{ borderRadius: "50px" }}
+								onClick={() => {
+									actions.login(username);
+								}}>
 								Log in!
 							</Button>
 						</Card.Body>

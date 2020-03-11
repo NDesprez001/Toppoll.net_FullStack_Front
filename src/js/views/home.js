@@ -23,7 +23,7 @@ export const Home = () => (
 				</ScrollAnimation>
 			</div>
 			<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s", animationDelay: "3s" }}>
-				<Link to="/register">
+				<Link to="/login">
 					<div className="info_cont2">
 						<button className="b1" variant="light">
 							<p>Get started</p>
@@ -103,6 +103,26 @@ export const Home = () => (
 					/>
 				</div>
 			</ScrollAnimation>
+			<div className="info_cluster2 d-flex justify-content-around align-items-center ">
+				<div className="info_cont4">
+					<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
+						<h1>Be part of the family!</h1>
+						<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
+							<h4>Join the many different topics and decusion</h4>
+							<h4>so whether from animals to politics, go as far as your mind takes you!</h4>
+						</ScrollAnimation>
+					</ScrollAnimation>
+				</div>
+				<ScrollAnimation animateIn="bounceIn" style={{ animationDuration: "7s", animationDelay: "3s" }}>
+					<Link to="/register">
+						<div className="info_cont5">
+							<button className="b1" variant="light">
+								<p>Join Now!</p>
+							</button>
+						</div>
+					</Link>
+				</ScrollAnimation>
+			</div>
 			<ScrollUpButton />
 		</div>
 		<Footer />
