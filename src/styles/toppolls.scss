@@ -15,7 +15,7 @@
     color: white;
     right: -20px;
     transition: all 0.8s;
-    text-shadow: 0px 10px 20px black;
+    box-shadow: 0px 10px 20px black;
 }
 
 .tImage img {
@@ -35,7 +35,7 @@
 
 .card:hover {
   transform: scale(1.05);
-  text-shadow: 0px 10px 20px black;
+  box-shadow: 0px 10px 20px black;
   z-index: 1;
 }
 
