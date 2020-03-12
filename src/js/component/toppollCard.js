@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 export function ToppollCard(props) {
 	return (
 		<div className="toppollLayout text-center mt-5" style={{ width: "400px" }}>
-			<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "3s" }}>
+			<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "1s" }}>
 				<Card style={{ width: "400px", borderRadius: "10px", height: "550px" }}>
 					<div className="tImage">
 						<img

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
+import { Profile } from "./views/profile";
 import { PollTopic } from "./views/pollPage";
 import { Toppolls } from "./views/toppolls";
 import { Login } from "./views/login";
@@ -27,7 +28,7 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Home} />
-						<Route path="/demo" component={Demo} />
+						<Route path="/profile" component={Profile} />
 						<Route path="/pollPage/:index" component={PollTopic} />
 						<Route path="/toppolls" component={Toppolls} />
 						<Route path="/login" component={Login} />
