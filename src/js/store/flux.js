@@ -1,5 +1,4 @@
-// const url = 'https://toppolls.herokuapp.com'
-const url = "https://3000-d74dd462-eefd-4f5e-ac59-8dbd53a34abb.ws-us02.gitpod.io";
+const url = "https://3000-cda0164d-88a6-4230-8fe0-948b3dbe57b5.ws-us02.gitpod.io/";
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {

@@ -47,10 +47,6 @@ export function PollTopic(props) {
 							</button>
 						</div>
 					</Link>
-					<TakeSpace />
-					<TakeSpace />
-					<TakeSpace />
-					<TakeSpace />
 				</div>
 			)}
 		</div>

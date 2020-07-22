@@ -8,10 +8,10 @@ export function Welcome() {
 			<div className="head-greetings" style={{ "text-align": "center", "padding-top": 200 }}>
 				<div className="animated fadeIn delay-1s" style={{ animationDuration: "3s" }}>
 					<h1>
-						Welcome to
+						WELCOME TO
 						<ScrollAnimation animateIn="bounce">
 							<strong>T</strong>
-							oppoll
+							OPPOLL
 						</ScrollAnimation>
 					</h1>
 					<h2 className="animated fadeInUp delay-1s" style={{ animationDuration: "8s" }}>

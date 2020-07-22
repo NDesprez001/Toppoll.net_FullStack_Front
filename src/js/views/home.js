@@ -15,7 +15,7 @@ export const Home = () => (
 		<div className="info_cluster d-flex justify-content-around align-items-center ">
 			<div className="info_cont1">
 				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
-					<h1>The Sky Is The Limit!</h1>
+					<h1>THE SKY IS THE LIMIT!</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
 						<h4>There are little to no limits to what the topics can be,</h4>
 						<h4>so whether from animals to politics, go as far as your mind takes you!</h4>
@@ -26,7 +26,7 @@ export const Home = () => (
 				<Link to="/login">
 					<div className="info_cont2">
 						<button className="b1" variant="light">
-							<p>Get started</p>
+							<p>GET STARTED</p>
 						</button>
 					</div>
 				</Link>
@@ -35,7 +35,7 @@ export const Home = () => (
 		<div className="banner2 d-flex justify-content-center align-items-center">
 			<div className="banner2Content">
 				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
-					<h1>Diverse Opinions</h1>
+					<h1>DIVERSE OPINIONS</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
 						<h4>With tons of people to converseate with, you can find many conversations,</h4>
 						<h4>debates, or even explainations. The discussion can be endless!</h4>
@@ -45,7 +45,7 @@ export const Home = () => (
 					<Link to="/toppolls">
 						<div className="info_cont3 mt-5">
 							<button className="b2" variant="light">
-								<p>Take a look</p>
+								<p>TAKE A PEEK</p>
 							</button>
 						</div>
 					</Link>
@@ -75,7 +75,7 @@ export const Home = () => (
 			</ScrollAnimation>
 			<div className="socialBanner" style={{ width: "600px", position: "relative", bottom: "20%", left: "60%" }}>
 				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
-					<h1>Spread the word!!</h1>
+					<h1>SPREAD THE WORD!!</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
 						<h4>
 							share great debates, questions and all sorts of things with you friends, family and further!{" "}
@@ -107,7 +107,7 @@ export const Home = () => (
 		<div className="info_cluster2 d-flex justify-content-around align-items-center ">
 			<div className="info_cont4">
 				<ScrollAnimation animateIn="fadeIn" style={{ animationDuration: "3s" }}>
-					<h1>Be part of the family!</h1>
+					<h1>BE PART OF THE FAMILY!</h1>
 					<ScrollAnimation animateIn="fadeInUp" style={{ animationDuration: "6s" }}>
 						<h4>Join the many different topics and decusion</h4>
 						<h4>so whether from animals to politics, go as far as your mind takes you!</h4>
@@ -118,7 +118,7 @@ export const Home = () => (
 				<Link to="/register">
 					<div className="info_cont5">
 						<button className="b1" variant="light">
-							<p>Join Now!</p>
+							<p>JOIN NOW!</p>
 						</button>
 					</div>
 				</Link>
